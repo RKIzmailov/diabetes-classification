@@ -106,7 +106,7 @@ The model is deployed as a `Flask` web service and containerized using Docker.
 
 2. Run the container:
 ```bash
-docker run -p 9696:9696 diabetes-prediction
+docker run -it -p 9696:9696 diabete-prediction:latest
 ```
 
 
