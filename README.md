@@ -2,8 +2,25 @@
 
 ![alt text](pictures/header.jpg)
 
+## Problem Description
+The goal of this project is to develop a machine learning model that predicts whether a patient has diabetes based on several health metrics such as glucose level, blood pressure, BMI, age, etc. This problem is significant in healthcare, as early detection of diabetes can improve patient outcomes.
+
+This is an educational project. It is not intended for practical use.
+
 ## Project Overview
 This project is part of the MLZoomcamp course provided by DataTalkClub. It implements a machine learning model for diabetes prediction using various classification algorithms, with XGBoost being the final chosen model due to its superior performance.
+
+Evaluation criterias:
+- Problem description: 2
+- EDA: 2
+- Model training: 3
+- Exporting notebook to script: 1
+- Model deployment: 1
+- Reproducibility: 1
+- Dependency and environment management: 2
+- Containerization: 2
+- Cloud deployment: 0
+
 
 ## Table of Contents
 - [Data](#data)
@@ -11,7 +28,7 @@ This project is part of the MLZoomcamp course provided by DataTalkClub. It imple
 - [Model Development](#model-development)
 - [Model Deployment](#model-deployment)
 - [Usage](#usage)
-- [Installation](#installation)
+
 
 ## Data
 The project uses the Diabetes Dataset from Kaggle. The dataset includes several health metrics used to predict diabetes:
@@ -80,6 +97,7 @@ The model is deployed as a `Flask` web service and containerized using Docker.
 - **Input**: JSON with patient health metrics
 - **Output**: Probability of diabetes and binary prediction
 
+
 ## Usage
 
 ### Running with Docker
@@ -90,6 +108,21 @@ The model is deployed as a `Flask` web service and containerized using Docker.
 ```bash
 docker run -p 9696:9696 diabetes-prediction
 ```
+
+
+### Running without Docker
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the Flask application:
+```bash
+python app/predict.py
+```
+
 
 ### Making Predictions
 1. You can use the `app/test.py` script 
@@ -122,24 +155,7 @@ result = response.json()
 print(result)
 ```
 
-## Installation
-
-### Local Development
-1. Clone the repository
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the Flask application:
-```bash
-python app/predict.py
-```
-
-### Requirements
-See `requirements.txt` for a complete list of dependencies.
-
-## Notes
+### Notes
 - The model prioritizes recall over precision due to the medical nature of the prediction task
 - Feature engineering decisions were made based on domain knowledge and data analysis
 - The service is configured to run on port 9696 by default
