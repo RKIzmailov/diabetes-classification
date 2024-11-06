@@ -1,5 +1,7 @@
 # Diabetes Prediction Model
 
+![alt text](pictures/header.jpg)
+
 ## Project Overview
 This project is part of the MLZoomcamp course provided by DataTalkClub. It implements a machine learning model for diabetes prediction using various classification algorithms, with XGBoost being the final chosen model due to its superior performance.
 
