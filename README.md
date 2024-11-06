@@ -90,7 +90,15 @@ docker run -p 9696:9696 diabetes-prediction
 ```
 
 ### Making Predictions
-You can use the `app/test.py` script or make direct API calls:
+1. You can use the `app/test.py` script 
+
+
+You will see something like this:
+
+![alt text](pictures/image.png)
+
+
+2. Also you can make direct API calls:
 
 ```python
 import requests
