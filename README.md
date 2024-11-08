@@ -11,15 +11,15 @@ This is an educational project. It is not intended for practical use.
 This project is part of the MLZoomcamp course provided by DataTalkClub. It implements a machine learning model for diabetes prediction using various classification algorithms, with XGBoost being the final chosen model due to its superior performance.
 
 Evaluation criterias:
-- Problem description: 2
-- EDA: 2
-- Model training: 3
-- Exporting notebook to script: 1
-- Model deployment: 1
-- Reproducibility: 1
-- Dependency and environment management: 2
-- Containerization: 2
-- Cloud deployment: 0
+- Problem description: 2 points
+- EDA: 2 points
+- Model training: 3 points
+- Exporting notebook to script: 1 points
+- Model deployment: 1 points
+- Reproducibility: 1 points
+- Dependency and environment management: 2 points
+- Containerization: 2 points
+- Cloud deployment: 0 points
 
 
 ## Table of Contents
